@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "firefighters_mod:block/smoke",
+    "up": "firefighters_mod:block/smoke",
+    "north": "firefighters_mod:block/smoke",
+    "east": "firefighters_mod:block/smoke",
+    "south": "firefighters_mod:block/smoke",
+    "west": "firefighters_mod:block/smoke",
+    "particle": "firefighters_mod:block/smoke"
+  },
+  "render_type": "translucent"
+}

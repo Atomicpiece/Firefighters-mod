@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "p-b_tank"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "firefighters_mod:custom/tires",
+  "textures": {
+    "all": "firefighters_mod:block/tires",
+    "particle": "firefighters_mod:block/tires",
+    "0": "firefighters_mod:block/tires"
+  },
+  "render_type": "cutout"
+}
