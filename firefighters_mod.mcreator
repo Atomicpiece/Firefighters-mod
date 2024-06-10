@@ -1,10 +1,29 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Unifire",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unifire",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/firefighters_mod/models/item/unifire.json",
+          "src/main/resources/assets/firefighters_mod/models/block/unifire.json",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/unifire.json",
+          "src/main/java/net/mcreator/firefightersmod/block/UnifireBlock.java",
+          "src/main/resources/assets/firefighters_mod/blockstates/unifire.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.firefighters_mod.unifire": "Unifire"
+    }
   },
   "foldersRoot": {
     "name": "~",
