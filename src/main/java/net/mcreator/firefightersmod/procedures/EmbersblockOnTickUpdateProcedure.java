@@ -25,9 +25,11 @@ public class EmbersblockOnTickUpdateProcedure {
 			for (int index1 = 0; index1 < 6; index1++) {
 				sz = -3;
 				for (int index2 = 0; index2 < 6; index2++) {
-					if (Mth.nextInt(RandomSource.create(), 1, 20) == 20) {
-						world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), FirefightersModModBlocks.SMOKE.get().defaultBlockState(), 3);
-						found = true;
+					if (Mth.nextInt(RandomSource.create(), 1, 100) == 20) {
+						if (!world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz)).canOcclude()) {
+							world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), FirefightersModModBlocks.SMOKE.get().defaultBlockState(), 3);
+							found = true;
+						}
 					}
 					sz = sz + 1;
 				}
