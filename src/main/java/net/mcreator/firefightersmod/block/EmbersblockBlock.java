@@ -1,24 +1,7 @@
 
 package net.mcreator.firefightersmod.block;
 
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.Containers;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.firefightersmod.procedures.EmbersblockOnTickUpdateProcedure;
-import net.mcreator.firefightersmod.block.entity.EmbersblockBlockEntity;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class EmbersblockBlock extends Block implements EntityBlock {
 	public EmbersblockBlock() {
@@ -42,7 +25,7 @@ public class EmbersblockBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		EmbersblockOnTickUpdateProcedure.execute(world, x, y, z);
+		EmbersblockOnTickUpdateProcedure.execute();
 		world.scheduleTick(pos, this, 1);
 	}
 

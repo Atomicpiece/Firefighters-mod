@@ -1,11 +1,6 @@
 package net.mcreator.firefightersmod.procedures;
 
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.firefightersmod.init.FirefightersModModBlocks;
-import net.mcreator.firefightersmod.FirefightersModMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class SmokeBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

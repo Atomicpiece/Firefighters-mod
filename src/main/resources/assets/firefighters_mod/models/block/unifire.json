@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "firefighters_mod:block/unifire",
+    "particle": "firefighters_mod:block/unifire"
+  },
+  "render_type": "cutout"
+}
