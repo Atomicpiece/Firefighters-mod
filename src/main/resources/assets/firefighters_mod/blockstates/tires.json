@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "firefighters_mod:block/tires",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "firefighters_mod:block/tires"
+    },
+    "axis=z": {
+      "model": "firefighters_mod:block/tires",
+      "x": 90
+    }
+  }
+}

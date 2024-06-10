@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "firefighters_mod:block/emberblock",
+    "up": "firefighters_mod:block/emberblock",
+    "north": "firefighters_mod:block/emberblock",
+    "east": "firefighters_mod:block/emberblock",
+    "south": "firefighters_mod:block/emberblock",
+    "west": "firefighters_mod:block/emberblock",
+    "particle": "firefighters_mod:block/emberblock"
+  },
+  "render_type": "solid"
+}

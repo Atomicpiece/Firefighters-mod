@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.firefightersmod.init.FirefightersModModTabs;
 import net.mcreator.firefightersmod.init.FirefightersModModItems;
 import net.mcreator.firefightersmod.init.FirefightersModModBlocks;
+import net.mcreator.firefightersmod.init.FirefightersModModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -42,7 +43,7 @@ public class FirefightersModMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		FirefightersModModBlocks.REGISTRY.register(bus);
-
+		FirefightersModModBlockEntities.REGISTRY.register(bus);
 		FirefightersModModItems.REGISTRY.register(bus);
 
 		FirefightersModModTabs.REGISTRY.register(bus);

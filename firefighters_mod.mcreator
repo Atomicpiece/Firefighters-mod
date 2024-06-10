@@ -15,15 +15,332 @@
           "src/main/resources/assets/firefighters_mod/blockstates/unifire.json"
         ]
       }
+    },
+    {
+      "name": "SmokeEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/SmokeEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hazmatsuit",
+      "type": "armor",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hazmatsuit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_helmet.json",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_chestplate.json",
+          "src/main/java/net/mcreator/firefightersmod/item/HazmatsuitItem.java",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_leggings.json",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "PBtank",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_btank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/firefighters_mod/models/block/p_btank.json",
+          "src/main/resources/assets/firefighters_mod/models/item/p_btank.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/p_btank.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/PBtankBlockEntity.java",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/p_btank.json",
+          "src/main/java/net/mcreator/firefightersmod/block/PBtankBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "PBtankNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_btank_neighbour_block_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/PBtankNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smoke",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/block/SmokeBlock.java",
+          "src/main/resources/assets/firefighters_mod/models/item/smoke.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/smoke.json",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/smoke.json",
+          "src/main/resources/assets/firefighters_mod/models/block/smoke.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/SmokeBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Cardboardbox",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cardboardbox",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/cardboardbox.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/cardboardbox.json",
+          "src/main/resources/assets/firefighters_mod/models/block/cardboardbox.json",
+          "src/main/resources/assets/firefighters_mod/models/item/cardboardbox.json",
+          "src/main/java/net/mcreator/firefightersmod/block/CardboardboxBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "SmokeBlockAdded",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/SmokeBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Embersblock",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "embersblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/firefighters_mod/blockstates/embersblock.json",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/embersblock.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/EmbersblockBlockEntity.java",
+          "src/main/java/net/mcreator/firefightersmod/block/EmbersblockBlock.java",
+          "src/main/resources/assets/firefighters_mod/models/item/embersblock.json",
+          "src/main/resources/assets/firefighters_mod/models/block/embersblock.json"
+        ]
+      }
+    },
+    {
+      "name": "SmokeEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/SmokeEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FirefighterSuit",
+      "type": "armor",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firefighter_suit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/item/FirefighterSuitItem.java",
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_chestplate.json",
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_leggings.json",
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_boots.json",
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "EmbersblockOnTickUpdate",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "embersblock_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/EmbersblockOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SmokeOnTickUpdate",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/SmokeOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FirefightersMod",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firefighters_mod",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Tires",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tires",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/tires.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/tires.json",
+          "src/main/resources/assets/firefighters_mod/models/item/tires.json",
+          "src/main/java/net/mcreator/firefightersmod/block/TiresBlock.java",
+          "src/main/resources/assets/firefighters_mod/models/block/tires.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
-    "en_us": {
-      "block.firefighters_mod.unifire": "Unifire"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",

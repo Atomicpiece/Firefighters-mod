@@ -1,0 +1,9 @@
+{
+  "parent": "firefighters_mod:custom/p-b_tank",
+  "textures": {
+    "all": "firefighters_mod:block/p-b_tank",
+    "particle": "firefighters_mod:block/p-b_tank",
+    "0": "firefighters_mod:block/p-b_tank"
+  },
+  "render_type": "cutout"
+}
