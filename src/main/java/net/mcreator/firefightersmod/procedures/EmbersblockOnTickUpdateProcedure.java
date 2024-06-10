@@ -18,13 +18,13 @@ public class EmbersblockOnTickUpdateProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		sx = -1;
+		sx = -3;
 		found = false;
-		for (int index0 = 0; index0 < 2; index0++) {
-			sy = -1;
-			for (int index1 = 0; index1 < 2; index1++) {
-				sz = 1;
-				for (int index2 = 0; index2 < 2; index2++) {
+		for (int index0 = 0; index0 < 6; index0++) {
+			sy = -3;
+			for (int index1 = 0; index1 < 6; index1++) {
+				sz = -3;
+				for (int index2 = 0; index2 < 6; index2++) {
 					if (Mth.nextInt(RandomSource.create(), 1, 20) == 20) {
 						world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), FirefightersModModBlocks.SMOKE.get().defaultBlockState(), 3);
 						found = true;
