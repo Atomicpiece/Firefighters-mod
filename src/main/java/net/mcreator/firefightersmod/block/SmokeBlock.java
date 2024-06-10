@@ -1,7 +1,41 @@
 
 package net.mcreator.firefightersmod.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import org.checkerframework.checker.units.qual.s;
+
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.firefightersmod.procedures.SmokeOnTickUpdateProcedure;
+import net.mcreator.firefightersmod.procedures.SmokeEntityWalksOnTheBlockProcedure;
+import net.mcreator.firefightersmod.procedures.SmokeEntityCollidesInTheBlockProcedure;
+import net.mcreator.firefightersmod.procedures.SmokeBlockAddedProcedure;
+import net.mcreator.firefightersmod.init.FirefightersModModBlocks;
+import net.mcreator.firefightersmod.block.entity.SmokeBlockEntity;
 
 public class SmokeBlock extends Block implements EntityBlock {
 	public SmokeBlock() {
@@ -42,7 +76,7 @@ public class SmokeBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 5);
-		SmokeBlockAddedProcedure.execute();
+		SmokeBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -51,14 +85,14 @@ public class SmokeBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		SmokeOnTickUpdateProcedure.execute();
+		SmokeOnTickUpdateProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 5);
 	}
 
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		SmokeEntityCollidesInTheBlockProcedure.execute();
+		SmokeEntityCollidesInTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
