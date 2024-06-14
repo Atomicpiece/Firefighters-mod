@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "firefighters_mod:block/burtires"
+    },
+    "type=top": {
+      "model": "firefighters_mod:block/burtires_top"
+    },
+    "type=double": {
+      "model": "firefighters_mod:block/burtires_full"
+    }
+  }
+}

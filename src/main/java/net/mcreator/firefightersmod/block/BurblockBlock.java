@@ -1,25 +1,11 @@
 
 package net.mcreator.firefightersmod.block;
 
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.Containers;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.firefightersmod.block.entity.BurblockBlockEntity;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class BurblockBlock extends Block implements EntityBlock {
 	public BurblockBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.GRAVEL).strength(1f, 10f).speedFactor(0.3f).jumpFactor(0.3f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.COLOR_BLACK).sound(SoundType.GRAVEL).strength(1f, 10f).speedFactor(0.3f).jumpFactor(0.3f));
 	}
 
 	@Override

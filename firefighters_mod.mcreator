@@ -4,7 +4,7 @@
       "name": "Unifire",
       "type": "block",
       "sortid": 15,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "unifire",
       "metadata": {
@@ -58,11 +58,11 @@
       "registry_name": "hazmatsuit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_helmet.json",
-          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_chestplate.json",
-          "src/main/java/net/mcreator/firefightersmod/item/HazmatsuitItem.java",
           "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_leggings.json",
-          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_boots.json"
+          "src/main/java/net/mcreator/firefightersmod/item/HazmatsuitItem.java",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_boots.json",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_helmet.json",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_chestplate.json"
         ]
       }
     },
@@ -75,11 +75,11 @@
       "registry_name": "p_btank",
       "metadata": {
         "files": [
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/p_btank.json",
           "src/main/resources/assets/firefighters_mod/models/block/p_btank.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/PBtankBlockEntity.java",
           "src/main/resources/assets/firefighters_mod/models/item/p_btank.json",
           "src/main/resources/assets/firefighters_mod/blockstates/p_btank.json",
-          "src/main/java/net/mcreator/firefightersmod/block/entity/PBtankBlockEntity.java",
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/p_btank.json",
           "src/main/java/net/mcreator/firefightersmod/block/PBtankBlock.java"
         ]
       }
@@ -124,12 +124,12 @@
       "registry_name": "smoke",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/firefightersmod/block/entity/SmokeBlockEntity.java",
           "src/main/java/net/mcreator/firefightersmod/block/SmokeBlock.java",
           "src/main/resources/assets/firefighters_mod/models/item/smoke.json",
           "src/main/resources/assets/firefighters_mod/blockstates/smoke.json",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/smoke.json",
-          "src/main/resources/assets/firefighters_mod/models/block/smoke.json",
-          "src/main/java/net/mcreator/firefightersmod/block/entity/SmokeBlockEntity.java"
+          "src/main/resources/assets/firefighters_mod/models/block/smoke.json"
         ]
       }
     },
@@ -142,11 +142,11 @@
       "registry_name": "cardboardbox",
       "metadata": {
         "files": [
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/cardboardbox.json",
           "src/main/resources/assets/firefighters_mod/blockstates/cardboardbox.json",
-          "src/main/resources/assets/firefighters_mod/models/block/cardboardbox.json",
           "src/main/resources/assets/firefighters_mod/models/item/cardboardbox.json",
-          "src/main/java/net/mcreator/firefightersmod/block/CardboardboxBlock.java"
+          "src/main/java/net/mcreator/firefightersmod/block/CardboardboxBlock.java",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/cardboardbox.json",
+          "src/main/resources/assets/firefighters_mod/models/block/cardboardbox.json"
         ]
       }
     },
@@ -190,12 +190,12 @@
       "registry_name": "embersblock",
       "metadata": {
         "files": [
+          "src/main/resources/assets/firefighters_mod/models/block/embersblock.json",
           "src/main/resources/assets/firefighters_mod/blockstates/embersblock.json",
+          "src/main/resources/assets/firefighters_mod/models/item/embersblock.json",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/embersblock.json",
           "src/main/java/net/mcreator/firefightersmod/block/entity/EmbersblockBlockEntity.java",
-          "src/main/java/net/mcreator/firefightersmod/block/EmbersblockBlock.java",
-          "src/main/resources/assets/firefighters_mod/models/item/embersblock.json",
-          "src/main/resources/assets/firefighters_mod/models/block/embersblock.json"
+          "src/main/java/net/mcreator/firefightersmod/block/EmbersblockBlock.java"
         ]
       }
     },
@@ -239,11 +239,11 @@
       "registry_name": "firefighter_suit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/firefightersmod/item/FirefighterSuitItem.java",
-          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_chestplate.json",
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_helmet.json",
           "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_leggings.json",
           "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_boots.json",
-          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_helmet.json"
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_chestplate.json",
+          "src/main/java/net/mcreator/firefightersmod/item/FirefighterSuitItem.java"
         ]
       }
     },
@@ -329,11 +329,11 @@
       "registry_name": "tires",
       "metadata": {
         "files": [
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/tires.json",
-          "src/main/resources/assets/firefighters_mod/blockstates/tires.json",
           "src/main/resources/assets/firefighters_mod/models/item/tires.json",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/tires.json",
+          "src/main/resources/assets/firefighters_mod/models/block/tires.json",
           "src/main/java/net/mcreator/firefightersmod/block/TiresBlock.java",
-          "src/main/resources/assets/firefighters_mod/models/block/tires.json"
+          "src/main/resources/assets/firefighters_mod/blockstates/tires.json"
         ]
       }
     },
@@ -341,7 +341,7 @@
       "name": "Sfla",
       "type": "block",
       "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sfla",
       "metadata": {
@@ -389,7 +389,7 @@
       "name": "Burblock",
       "type": "block",
       "sortid": 19,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "burblock",
       "metadata": {
@@ -464,11 +464,516 @@
           }
         ]
       }
+    },
+    {
+      "name": "Water",
+      "type": "projectile",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/entity/WaterEntity.java",
+          "src/main/java/net/mcreator/firefightersmod/client/renderer/WaterRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "TiresNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tires_neighbour_block_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/TiresNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireExtinguisher",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_extinguisher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/firefighters_mod/models/item/fire_extinguisher.json",
+          "src/main/java/net/mcreator/firefightersmod/item/FireExtinguisherItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FireExtinguisherItemInHandTick",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_extinguisher_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/FireExtinguisherItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BurningTiresOnTickUpdate",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_tires_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/BurningTiresOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmbersblockBlockAdded",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "embersblock_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/EmbersblockBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TiresslabOnTickUpdate",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiresslab_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/TiresslabOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireHoseItemInHandTick",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_hose_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/FireHoseItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BurningTiresBlockAdded",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_tires_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/BurningTiresBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AntiSmoke",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_smoke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/item/AntiSmokeItem.java",
+          "src/main/resources/assets/firefighters_mod/models/item/anti_smoke.json"
+        ]
+      }
+    },
+    {
+      "name": "Testtab",
+      "type": "tab",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Burtires",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burtires",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/firefighters_mod/models/block/burtires_full.json",
+          "src/main/resources/assets/firefighters_mod/models/block/burtires.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/burtires.json",
+          "src/main/resources/assets/firefighters_mod/models/block/burtires_top.json",
+          "src/main/java/net/mcreator/firefightersmod/block/BurtiresBlock.java",
+          "src/main/resources/assets/firefighters_mod/models/item/burtires.json",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/burtires.json"
+        ]
+      }
+    },
+    {
+      "name": "TiresslabBlockAdded",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiresslab_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/TiresslabBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Antiburn",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antiburn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/firefighters_mod/models/item/antiburn.json",
+          "src/main/java/net/mcreator/firefightersmod/item/AntiburnItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WaterProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/WaterProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WaterProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/WaterProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BurningTires",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_tires",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/burning_tires.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/BurningTiresBlockEntity.java",
+          "src/main/resources/assets/firefighters_mod/models/item/burning_tires.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/burning_tires.json",
+          "src/main/resources/assets/firefighters_mod/models/block/burning_tires.json",
+          "src/main/java/net/mcreator/firefightersmod/block/BurningTiresBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Watter",
+      "type": "particle",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/client/particle/WatterParticle.java",
+          "src/main/resources/assets/firefighters_mod/particles/watter.json"
+        ]
+      }
+    },
+    {
+      "name": "FireHose",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_hose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/item/FireHoseItem.java",
+          "src/main/resources/assets/firefighters_mod/models/item/fire_hose.json"
+        ]
+      }
+    },
+    {
+      "name": "AntiSmokeRightclicked",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_smoke_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/AntiSmokeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tiresslab",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiresslab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/block/TiresslabBlock.java",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/tiresslab.json",
+          "src/main/resources/assets/firefighters_mod/models/block/tiresslab_top.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/tiresslab.json",
+          "src/main/resources/assets/firefighters_mod/models/block/tiresslab_full.json",
+          "src/main/resources/assets/firefighters_mod/models/item/tiresslab.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/TiresslabBlockEntity.java",
+          "src/main/resources/assets/firefighters_mod/models/block/tiresslab.json"
+        ]
+      }
+    },
+    {
+      "name": "AntiburnRightclicked",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antiburn_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/AntiburnRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:Tiresslab",
+      "~CUSTOM:Burtires"
+    ]
+  },
   "language_map": {
     "en_us": {
       "block.firefighters_mod.burblock": "Burned block",

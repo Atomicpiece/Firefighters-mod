@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "firefighters_mod:block/tiresslab"
+    },
+    "type=top": {
+      "model": "firefighters_mod:block/tiresslab_top"
+    },
+    "type=double": {
+      "model": "firefighters_mod:block/tiresslab_full"
+    }
+  }
+}

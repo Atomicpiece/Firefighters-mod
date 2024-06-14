@@ -1,0 +1,7 @@
+{
+  "parent": "firefighters_mod:custom/fire_hose",
+  "textures": {
+    "0": "firefighters_mod:block/firehose",
+    "particle": "firefighters_mod:item/pipe"
+  }
+}

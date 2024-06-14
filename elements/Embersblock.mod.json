@@ -119,6 +119,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "EmbersblockBlockAdded"
+    },
     "onTickUpdate": {
       "name": "EmbersblockOnTickUpdate"
     },

@@ -15,12 +15,15 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.firefightersmod.block.UnifireBlock;
+import net.mcreator.firefightersmod.block.TiresslabBlock;
 import net.mcreator.firefightersmod.block.TiresBlock;
 import net.mcreator.firefightersmod.block.SmokeBlock;
 import net.mcreator.firefightersmod.block.SflaBlock;
 import net.mcreator.firefightersmod.block.PBtankBlock;
 import net.mcreator.firefightersmod.block.EmbersblockBlock;
 import net.mcreator.firefightersmod.block.CardboardboxBlock;
+import net.mcreator.firefightersmod.block.BurtiresBlock;
+import net.mcreator.firefightersmod.block.BurningTiresBlock;
 import net.mcreator.firefightersmod.block.BurblockBlock;
 import net.mcreator.firefightersmod.FirefightersModMod;
 
@@ -34,6 +37,9 @@ public class FirefightersModModBlocks {
 	public static final RegistryObject<Block> TIRES = REGISTRY.register("tires", () -> new TiresBlock());
 	public static final RegistryObject<Block> SFLA = REGISTRY.register("sfla", () -> new SflaBlock());
 	public static final RegistryObject<Block> BURBLOCK = REGISTRY.register("burblock", () -> new BurblockBlock());
+	public static final RegistryObject<Block> BURTIRES = REGISTRY.register("burtires", () -> new BurtiresBlock());
+	public static final RegistryObject<Block> BURNING_TIRES = REGISTRY.register("burning_tires", () -> new BurningTiresBlock());
+	public static final RegistryObject<Block> TIRESSLAB = REGISTRY.register("tiresslab", () -> new TiresslabBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
