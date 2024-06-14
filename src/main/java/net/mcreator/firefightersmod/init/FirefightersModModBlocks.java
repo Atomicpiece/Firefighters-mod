@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.firefightersmod.block.UnifireBlock;
 import net.mcreator.firefightersmod.block.TiresBlock;
 import net.mcreator.firefightersmod.block.SmokeBlock;
+import net.mcreator.firefightersmod.block.SflaBlock;
 import net.mcreator.firefightersmod.block.PBtankBlock;
 import net.mcreator.firefightersmod.block.EmbersblockBlock;
 import net.mcreator.firefightersmod.block.CardboardboxBlock;
@@ -30,6 +31,7 @@ public class FirefightersModModBlocks {
 	public static final RegistryObject<Block> CARDBOARDBOX = REGISTRY.register("cardboardbox", () -> new CardboardboxBlock());
 	public static final RegistryObject<Block> EMBERSBLOCK = REGISTRY.register("embersblock", () -> new EmbersblockBlock());
 	public static final RegistryObject<Block> TIRES = REGISTRY.register("tires", () -> new TiresBlock());
+	public static final RegistryObject<Block> SFLA = REGISTRY.register("sfla", () -> new SflaBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
