@@ -34,7 +34,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.firefightersmod.procedures.UnifireOnTickUpdateProcedure;
-import net.mcreator.firefightersmod.procedures.UnifireNeighbourBlockChangesProcedure;
 import net.mcreator.firefightersmod.procedures.UnifireBlockValidPlacementConditionProcedure;
 import net.mcreator.firefightersmod.procedures.UnifireBlockAddedProcedure;
 import net.mcreator.firefightersmod.block.entity.UnifireBlockEntity;
@@ -103,12 +102,6 @@ public class UnifireBlock extends Block implements SimpleWaterloggedBlock, Entit
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
 		UnifireBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		UnifireNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
