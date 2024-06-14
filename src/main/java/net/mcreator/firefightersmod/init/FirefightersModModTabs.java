@@ -41,6 +41,7 @@ public class FirefightersModModTabs {
 				tabData.accept(FirefightersModModBlocks.TIRES.get().asItem());
 				tabData.accept(FirefightersModModBlocks.CARDBOARDBOX.get().asItem());
 				tabData.accept(FirefightersModModBlocks.EMBERSBLOCK.get().asItem());
+				tabData.accept(FirefightersModModBlocks.SFLA.get().asItem());
 				tabData.accept(FirefightersModModBlocks.BURBLOCK.get().asItem());
 				tabData.accept(FirefightersModModItems.FIRE_HOSE.get());
 				tabData.accept(FirefightersModModItems.FIRE_EXTINGUISHER.get());

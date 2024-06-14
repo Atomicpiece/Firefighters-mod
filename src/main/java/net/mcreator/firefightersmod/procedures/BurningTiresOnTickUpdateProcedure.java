@@ -1,18 +1,6 @@
 package net.mcreator.firefightersmod.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.firefightersmod.init.FirefightersModModBlocks;
-import net.mcreator.firefightersmod.FirefightersModMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class BurningTiresOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -26,42 +14,42 @@ public class BurningTiresOnTickUpdateProcedure {
 		if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
 			FirefightersModMod.queueServerWork(20, () -> {
 				if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
-					world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.BURNING_TIRES.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				}
 			});
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
 			FirefightersModMod.queueServerWork(20, () -> {
 				if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
-					world.setBlock(BlockPos.containing(x, y + 1, z), FirefightersModModBlocks.BURNING_TIRES.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x, y + 1, z), FirefightersModModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				}
 			});
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
 			FirefightersModMod.queueServerWork(20, () -> {
 				if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
-					world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.BURNING_TIRES.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				}
 			});
 		}
 		if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
 			FirefightersModMod.queueServerWork(20, () -> {
 				if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
-					world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.BURNING_TIRES.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				}
 			});
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
 			FirefightersModMod.queueServerWork(20, () -> {
 				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
-					world.setBlock(BlockPos.containing(x, y - 1, z), FirefightersModModBlocks.BURNING_TIRES.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x, y - 1, z), FirefightersModModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				}
 			});
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
 			FirefightersModMod.queueServerWork(20, () -> {
 				if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == FirefightersModModBlocks.TIRES.get()) {
-					world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.BURNING_TIRES.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				}
 			});
 		}

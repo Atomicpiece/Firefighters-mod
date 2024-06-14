@@ -312,9 +312,6 @@
     "minecraft:big_dripleaf",
     "minecraft:big_dripleaf_stem",
     "minecraft:small_dripleaf",
-    "minecraft:hanging_roots",
-    "minecraft:potted_bamboo",
-    "minecraft:bamboo_sapling",
-    "minecraft:bamboo"
+    "minecraft:hanging_roots"
   ]
 }

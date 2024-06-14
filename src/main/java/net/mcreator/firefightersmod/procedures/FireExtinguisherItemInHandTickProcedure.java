@@ -1,15 +1,6 @@
 package net.mcreator.firefightersmod.procedures;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.Projectile;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.firefightersmod.init.FirefightersModModItems;
-import net.mcreator.firefightersmod.init.FirefightersModModEntities;
-import net.mcreator.firefightersmod.entity.WaterEntity;
+import net.minecraftforge.eventbus.api.Event;
 
 public class FireExtinguisherItemInHandTickProcedure {
 	public static void execute(Entity entity) {

@@ -1,10 +1,6 @@
 package net.mcreator.firefightersmod.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.firefightersmod.init.FirefightersModModBlocks;
-import net.mcreator.firefightersmod.FirefightersModMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class TiresNeighbourBlockChangesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -16,7 +12,7 @@ public class TiresNeighbourBlockChangesProcedure {
 						|| (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == FirefightersModModBlocks.UNIFIRE.get() || (world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == FirefightersModModBlocks.UNIFIRE.get()
 						|| (world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == FirefightersModModBlocks.UNIFIRE.get() || (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == FirefightersModModBlocks.UNIFIRE.get()
 						|| (world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == FirefightersModModBlocks.UNIFIRE.get())) {
-					world.setBlock(BlockPos.containing(x, y, z), FirefightersModModBlocks.BURNING_TIRES.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x, y, z), FirefightersModModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				}
 			});
 		}
