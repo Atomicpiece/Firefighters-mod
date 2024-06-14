@@ -21,6 +21,11 @@ import net.mcreator.firefightersmod.FirefightersModMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FirefightersModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirefightersModMod.MODID);
+	public static final RegistryObject<CreativeModeTab> TESTTAB = REGISTRY.register("testtab",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.firefighters_mod.testtab")).icon(() -> new ItemStack(FirefightersModModBlocks.SMOKE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(FirefightersModModItems.ANTI_SMOKE.get());
+				tabData.accept(FirefightersModModItems.ANTIBURN.get());
+			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> FIREFIGHTERS_MOD = REGISTRY.register("firefighters_mod",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.firefighters_mod.firefighters_mod")).icon(() -> new ItemStack(FirefightersModModItems.FIREFIGHTER_SUIT_CHESTPLATE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FirefightersModModItems.FIREFIGHTER_SUIT_HELMET.get());
@@ -37,6 +42,11 @@ public class FirefightersModModTabs {
 				tabData.accept(FirefightersModModBlocks.CARDBOARDBOX.get().asItem());
 				tabData.accept(FirefightersModModBlocks.EMBERSBLOCK.get().asItem());
 				tabData.accept(FirefightersModModBlocks.BURBLOCK.get().asItem());
+				tabData.accept(FirefightersModModItems.FIRE_HOSE.get());
+				tabData.accept(FirefightersModModItems.FIRE_EXTINGUISHER.get());
+				tabData.accept(FirefightersModModBlocks.BURNING_TIRES.get().asItem());
+				tabData.accept(FirefightersModModBlocks.TIRESSLAB.get().asItem());
+				tabData.accept(FirefightersModModBlocks.BURTIRES.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

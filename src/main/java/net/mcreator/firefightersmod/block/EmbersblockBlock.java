@@ -18,6 +18,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.firefightersmod.procedures.EmbersblockOnTickUpdateProcedure;
+import net.mcreator.firefightersmod.procedures.EmbersblockBlockAddedProcedure;
 import net.mcreator.firefightersmod.block.entity.EmbersblockBlockEntity;
 
 public class EmbersblockBlock extends Block implements EntityBlock {
@@ -34,6 +35,7 @@ public class EmbersblockBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
+		EmbersblockBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

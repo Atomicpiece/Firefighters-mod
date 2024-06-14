@@ -14,6 +14,10 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.firefightersmod.item.HazmatsuitItem;
 import net.mcreator.firefightersmod.item.FirefighterSuitItem;
+import net.mcreator.firefightersmod.item.FireHoseItem;
+import net.mcreator.firefightersmod.item.FireExtinguisherItem;
+import net.mcreator.firefightersmod.item.AntiburnItem;
+import net.mcreator.firefightersmod.item.AntiSmokeItem;
 import net.mcreator.firefightersmod.FirefightersModMod;
 
 public class FirefightersModModItems {
@@ -33,6 +37,13 @@ public class FirefightersModModItems {
 	public static final RegistryObject<Item> FIREFIGHTER_SUIT_BOOTS = REGISTRY.register("firefighter_suit_boots", () -> new FirefighterSuitItem.Boots());
 	public static final RegistryObject<Item> TIRES = block(FirefightersModModBlocks.TIRES);
 	public static final RegistryObject<Item> BURBLOCK = block(FirefightersModModBlocks.BURBLOCK);
+	public static final RegistryObject<Item> FIRE_HOSE = REGISTRY.register("fire_hose", () -> new FireHoseItem());
+	public static final RegistryObject<Item> FIRE_EXTINGUISHER = REGISTRY.register("fire_extinguisher", () -> new FireExtinguisherItem());
+	public static final RegistryObject<Item> BURNING_TIRES = block(FirefightersModModBlocks.BURNING_TIRES);
+	public static final RegistryObject<Item> TIRESSLAB = block(FirefightersModModBlocks.TIRESSLAB);
+	public static final RegistryObject<Item> BURTIRES = block(FirefightersModModBlocks.BURTIRES);
+	public static final RegistryObject<Item> ANTI_SMOKE = REGISTRY.register("anti_smoke", () -> new AntiSmokeItem());
+	public static final RegistryObject<Item> ANTIBURN = REGISTRY.register("antiburn", () -> new AntiburnItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,7 @@
+{
+  "parent": "firefighters_mod:custom/fireextinguisher",
+  "textures": {
+    "0": "firefighters_mod:block/fireextinguisher",
+    "particle": "firefighters_mod:item/exting"
+  }
+}

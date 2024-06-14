@@ -1,6 +1,7 @@
 
 package net.mcreator.firefightersmod.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -19,7 +20,7 @@ import net.mcreator.firefightersmod.block.entity.BurblockBlockEntity;
 
 public class BurblockBlock extends Block implements EntityBlock {
 	public BurblockBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.GRAVEL).strength(1f, 10f).speedFactor(0.3f).jumpFactor(0.3f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.COLOR_BLACK).sound(SoundType.GRAVEL).strength(1f, 10f).speedFactor(0.3f).jumpFactor(0.3f));
 	}
 
 	@Override

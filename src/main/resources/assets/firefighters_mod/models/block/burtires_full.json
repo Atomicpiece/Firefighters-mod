@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "firefighters_mod:block/tiress",
+    "top": "firefighters_mod:block/tiress",
+    "side": "firefighters_mod:block/tiress"
+  },
+  "render_type": "solid"
+}

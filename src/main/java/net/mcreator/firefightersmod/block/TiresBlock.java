@@ -13,10 +13,13 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.firefightersmod.procedures.TiresNeighbourBlockChangesProcedure;
 
 public class TiresBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
@@ -27,8 +30,13 @@ public class TiresBlock extends Block {
 	}
 
 	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+		return true;
+	}
+
+	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 10;
+		return 0;
 	}
 
 	@Override
@@ -66,5 +74,11 @@ public class TiresBlock extends Block {
 	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 1000;
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		TiresNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

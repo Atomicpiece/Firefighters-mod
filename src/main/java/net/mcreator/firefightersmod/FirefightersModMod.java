@@ -18,7 +18,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.firefightersmod.init.FirefightersModModTabs;
+import net.mcreator.firefightersmod.init.FirefightersModModParticleTypes;
 import net.mcreator.firefightersmod.init.FirefightersModModItems;
+import net.mcreator.firefightersmod.init.FirefightersModModEntities;
 import net.mcreator.firefightersmod.init.FirefightersModModBlocks;
 import net.mcreator.firefightersmod.init.FirefightersModModBlockEntities;
 
@@ -45,8 +47,11 @@ public class FirefightersModMod {
 		FirefightersModModBlocks.REGISTRY.register(bus);
 		FirefightersModModBlockEntities.REGISTRY.register(bus);
 		FirefightersModModItems.REGISTRY.register(bus);
+		FirefightersModModEntities.REGISTRY.register(bus);
 
 		FirefightersModModTabs.REGISTRY.register(bus);
+
+		FirefightersModModParticleTypes.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

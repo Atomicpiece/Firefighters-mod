@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "firefighters_mod:blocks/burning_tires",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "firefighters_mod:burning_tires"
+        }
+      ]
+    }
+  ]
+}

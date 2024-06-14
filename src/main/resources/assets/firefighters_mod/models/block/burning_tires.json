@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "firefighters_mod:block/tir",
+    "up": "firefighters_mod:block/tir",
+    "north": "firefighters_mod:block/tir",
+    "east": "firefighters_mod:block/tir",
+    "south": "firefighters_mod:block/tir",
+    "west": "firefighters_mod:block/tir",
+    "particle": "firefighters_mod:block/tir"
+  },
+  "render_type": "solid"
+}
