@@ -33,6 +33,7 @@ public class FirefightersModModItems {
 	public static final RegistryObject<Item> FIREFIGHTER_SUIT_BOOTS = REGISTRY.register("firefighter_suit_boots", () -> new FirefighterSuitItem.Boots());
 	public static final RegistryObject<Item> TIRES = block(FirefightersModModBlocks.TIRES);
 	public static final RegistryObject<Item> SFLA = block(FirefightersModModBlocks.SFLA);
+	public static final RegistryObject<Item> BURBLOCK = block(FirefightersModModBlocks.BURBLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -2,10 +2,12 @@ package net.mcreator.firefightersmod.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -18,16 +20,18 @@ public class EmbersblockOnTickUpdateProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		sx = -3;
+		sx = -2;
 		found = false;
-		for (int index0 = 0; index0 < 6; index0++) {
-			sy = -3;
-			for (int index1 = 0; index1 < 6; index1++) {
-				sz = -3;
-				for (int index2 = 0; index2 < 6; index2++) {
-					if (Mth.nextInt(RandomSource.create(), 1, 20) == 20) {
-						world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), FirefightersModModBlocks.SMOKE.get().defaultBlockState(), 3);
-						found = true;
+		for (int index0 = 0; index0 < 4; index0++) {
+			sy = -2;
+			for (int index1 = 0; index1 < 4; index1++) {
+				sz = -2;
+				for (int index2 = 0; index2 < 4; index2++) {
+					if (Mth.nextInt(RandomSource.create(), 1, 2400) == 2400) {
+						if (!world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz)).canOcclude()) {
+							world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), FirefightersModModBlocks.SMOKE.get().defaultBlockState(), 3);
+							found = true;
+						}
 					}
 					sz = sz + 1;
 				}
@@ -43,6 +47,48 @@ public class EmbersblockOnTickUpdateProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.campfire.crackle")), SoundSource.MASTER, 1, 2, false);
 				}
 			}
+		}
+		if ((world.getBlockState(BlockPos.containing(x + 1, y, z)))
+				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+			world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z)))
+				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+			world.setBlock(BlockPos.containing(x, y + 1, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z + 1)))
+				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+			world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+		}
+		if ((world.getBlockState(BlockPos.containing(x - 1, y, z)))
+				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+			world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z)))
+				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+			world.setBlock(BlockPos.containing(x, y - 1, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z - 1)))
+				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+			world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+		}
+		if (!world.getBlockState(BlockPos.containing(x + 1, y, z)).canOcclude()) {
+			world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
+		}
+		if (!world.getBlockState(BlockPos.containing(x, y + 1, z)).canOcclude()) {
+			world.setBlock(BlockPos.containing(x, y + 1, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
+		}
+		if (!world.getBlockState(BlockPos.containing(x, y, z + 1)).canOcclude()) {
+			world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
+		}
+		if (!world.getBlockState(BlockPos.containing(x - 1, y, z)).canOcclude()) {
+			world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
+		}
+		if (!world.getBlockState(BlockPos.containing(x, y - 1, z)).canOcclude()) {
+			world.setBlock(BlockPos.containing(x, y - 1, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
+		}
+		if (!world.getBlockState(BlockPos.containing(x, y, z - 1)).canOcclude()) {
+			world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 		}
 	}
 }

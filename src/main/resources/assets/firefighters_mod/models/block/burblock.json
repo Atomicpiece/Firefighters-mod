@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "firefighters_mod:block/burn",
+    "up": "firefighters_mod:block/burn",
+    "north": "firefighters_mod:block/burn",
+    "east": "firefighters_mod:block/burn",
+    "south": "firefighters_mod:block/burn",
+    "west": "firefighters_mod:block/burn",
+    "particle": "firefighters_mod:block/burn"
+  },
+  "render_type": "solid"
+}

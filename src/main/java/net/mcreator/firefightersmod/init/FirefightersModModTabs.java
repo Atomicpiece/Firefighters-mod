@@ -37,6 +37,7 @@ public class FirefightersModModTabs {
 				tabData.accept(FirefightersModModBlocks.CARDBOARDBOX.get().asItem());
 				tabData.accept(FirefightersModModBlocks.EMBERSBLOCK.get().asItem());
 				tabData.accept(FirefightersModModBlocks.SFLA.get().asItem());
+				tabData.accept(FirefightersModModBlocks.BURBLOCK.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

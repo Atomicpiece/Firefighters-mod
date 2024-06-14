@@ -21,6 +21,7 @@ import net.mcreator.firefightersmod.block.SflaBlock;
 import net.mcreator.firefightersmod.block.PBtankBlock;
 import net.mcreator.firefightersmod.block.EmbersblockBlock;
 import net.mcreator.firefightersmod.block.CardboardboxBlock;
+import net.mcreator.firefightersmod.block.BurblockBlock;
 import net.mcreator.firefightersmod.FirefightersModMod;
 
 public class FirefightersModModBlocks {
@@ -32,6 +33,7 @@ public class FirefightersModModBlocks {
 	public static final RegistryObject<Block> EMBERSBLOCK = REGISTRY.register("embersblock", () -> new EmbersblockBlock());
 	public static final RegistryObject<Block> TIRES = REGISTRY.register("tires", () -> new TiresBlock());
 	public static final RegistryObject<Block> SFLA = REGISTRY.register("sfla", () -> new SflaBlock());
+	public static final RegistryObject<Block> BURBLOCK = REGISTRY.register("burblock", () -> new BurblockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
