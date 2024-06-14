@@ -1,7 +1,43 @@
 
 package net.mcreator.firefightersmod.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import org.checkerframework.checker.units.qual.s;
+
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.SimpleWaterloggedBlock;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.firefightersmod.procedures.UnifireOnTickUpdateProcedure;
+import net.mcreator.firefightersmod.procedures.UnifireNeighbourBlockChangesProcedure;
+import net.mcreator.firefightersmod.procedures.UnifireBlockValidPlacementConditionProcedure;
+import net.mcreator.firefightersmod.procedures.UnifireBlockAddedProcedure;
+import net.mcreator.firefightersmod.block.entity.UnifireBlockEntity;
 
 public class UnifireBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
@@ -39,6 +75,17 @@ public class UnifireBlock extends Block implements SimpleWaterloggedBlock, Entit
 	}
 
 	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return UnifireBlockValidPlacementConditionProcedure.execute(world, x, y, z);
+		}
+		return super.canSurvive(blockstate, worldIn, pos);
+	}
+
+	@Override
 	public FluidState getFluidState(BlockState state) {
 		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
 	}
@@ -48,7 +95,7 @@ public class UnifireBlock extends Block implements SimpleWaterloggedBlock, Entit
 		if (state.getValue(WATERLOGGED)) {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
-		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
 
 	@Override

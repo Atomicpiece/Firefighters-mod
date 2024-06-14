@@ -1,11 +1,21 @@
 
 package net.mcreator.firefightersmod.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import org.checkerframework.checker.units.qual.s;
+
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.core.BlockPos;
 
 public class SflaBlock extends Block {
 	public SflaBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).lightLevel(s -> 2).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).lightLevel(s -> 2).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

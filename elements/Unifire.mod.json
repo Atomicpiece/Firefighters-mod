@@ -101,6 +101,9 @@
     "luminance": 10,
     "unbreakable": false,
     "breakHarvestLevel": 1,
+    "placingCondition": {
+      "name": "UnifireBlockValidPlacementCondition"
+    },
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",

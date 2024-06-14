@@ -1,12 +1,21 @@
 package net.mcreator.firefightersmod.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.firefightersmod.init.FirefightersModModItems;
+import net.mcreator.firefightersmod.init.FirefightersModModEntities;
+import net.mcreator.firefightersmod.entity.WaterEntity;
 
 public class FireHoseItemInHandTickProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _entUseItem0 ? _entUseItem0.getUseItem() : ItemStack.EMPTY).getItem() == FirefightersModModItems.DELETED_MOD_ELEMENT.get()) {
+		if ((entity instanceof LivingEntity _entUseItem0 ? _entUseItem0.getUseItem() : ItemStack.EMPTY).getItem() == FirefightersModModItems.FIRE_HOSE.get()) {
 			{
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();

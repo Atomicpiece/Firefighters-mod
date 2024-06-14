@@ -4,7 +4,7 @@
       "name": "Unifire",
       "type": "block",
       "sortid": 15,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "unifire",
       "metadata": {
@@ -58,11 +58,11 @@
       "registry_name": "hazmatsuit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_leggings.json",
-          "src/main/java/net/mcreator/firefightersmod/item/HazmatsuitItem.java",
-          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_boots.json",
           "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_helmet.json",
-          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_chestplate.json"
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_chestplate.json",
+          "src/main/java/net/mcreator/firefightersmod/item/HazmatsuitItem.java",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_leggings.json",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_boots.json"
         ]
       }
     },
@@ -75,11 +75,11 @@
       "registry_name": "p_btank",
       "metadata": {
         "files": [
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/p_btank.json",
           "src/main/resources/assets/firefighters_mod/models/block/p_btank.json",
-          "src/main/java/net/mcreator/firefightersmod/block/entity/PBtankBlockEntity.java",
           "src/main/resources/assets/firefighters_mod/models/item/p_btank.json",
           "src/main/resources/assets/firefighters_mod/blockstates/p_btank.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/PBtankBlockEntity.java",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/p_btank.json",
           "src/main/java/net/mcreator/firefightersmod/block/PBtankBlock.java"
         ]
       }
@@ -124,12 +124,12 @@
       "registry_name": "smoke",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/firefightersmod/block/entity/SmokeBlockEntity.java",
           "src/main/java/net/mcreator/firefightersmod/block/SmokeBlock.java",
           "src/main/resources/assets/firefighters_mod/models/item/smoke.json",
           "src/main/resources/assets/firefighters_mod/blockstates/smoke.json",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/smoke.json",
-          "src/main/resources/assets/firefighters_mod/models/block/smoke.json"
+          "src/main/resources/assets/firefighters_mod/models/block/smoke.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/SmokeBlockEntity.java"
         ]
       }
     },
@@ -142,11 +142,11 @@
       "registry_name": "cardboardbox",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/blockstates/cardboardbox.json",
-          "src/main/resources/assets/firefighters_mod/models/item/cardboardbox.json",
-          "src/main/java/net/mcreator/firefightersmod/block/CardboardboxBlock.java",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/cardboardbox.json",
-          "src/main/resources/assets/firefighters_mod/models/block/cardboardbox.json"
+          "src/main/resources/assets/firefighters_mod/blockstates/cardboardbox.json",
+          "src/main/resources/assets/firefighters_mod/models/block/cardboardbox.json",
+          "src/main/resources/assets/firefighters_mod/models/item/cardboardbox.json",
+          "src/main/java/net/mcreator/firefightersmod/block/CardboardboxBlock.java"
         ]
       }
     },
@@ -190,12 +190,12 @@
       "registry_name": "embersblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/models/block/embersblock.json",
           "src/main/resources/assets/firefighters_mod/blockstates/embersblock.json",
-          "src/main/resources/assets/firefighters_mod/models/item/embersblock.json",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/embersblock.json",
           "src/main/java/net/mcreator/firefightersmod/block/entity/EmbersblockBlockEntity.java",
-          "src/main/java/net/mcreator/firefightersmod/block/EmbersblockBlock.java"
+          "src/main/java/net/mcreator/firefightersmod/block/EmbersblockBlock.java",
+          "src/main/resources/assets/firefighters_mod/models/item/embersblock.json",
+          "src/main/resources/assets/firefighters_mod/models/block/embersblock.json"
         ]
       }
     },
@@ -239,11 +239,11 @@
       "registry_name": "firefighter_suit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_helmet.json",
+          "src/main/java/net/mcreator/firefightersmod/item/FirefighterSuitItem.java",
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_chestplate.json",
           "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_leggings.json",
           "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_boots.json",
-          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_chestplate.json",
-          "src/main/java/net/mcreator/firefightersmod/item/FirefighterSuitItem.java"
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_helmet.json"
         ]
       }
     },
@@ -329,11 +329,11 @@
       "registry_name": "tires",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/models/item/tires.json",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/tires.json",
-          "src/main/resources/assets/firefighters_mod/models/block/tires.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/tires.json",
+          "src/main/resources/assets/firefighters_mod/models/item/tires.json",
           "src/main/java/net/mcreator/firefightersmod/block/TiresBlock.java",
-          "src/main/resources/assets/firefighters_mod/blockstates/tires.json"
+          "src/main/resources/assets/firefighters_mod/models/block/tires.json"
         ]
       }
     },
@@ -469,7 +469,7 @@
       "name": "Water",
       "type": "projectile",
       "sortid": 23,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "water",
       "metadata": {
@@ -841,7 +841,7 @@
       "name": "BurningTires",
       "type": "block",
       "sortid": 29,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "burning_tires",
       "metadata": {
@@ -918,7 +918,7 @@
       "name": "Tiresslab",
       "type": "block",
       "sortid": 30,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "tiresslab",
       "metadata": {
@@ -964,6 +964,38 @@
           }
         ]
       }
+    },
+    {
+      "name": "UnifireBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unifire_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/UnifireBlockValidPlacementConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -976,23 +1008,31 @@
   },
   "language_map": {
     "en_us": {
+      "block.firefighters_mod.burtires": "Burtires",
       "block.firefighters_mod.burblock": "Burned block",
       "item.firefighters_mod.hazmatsuit_boots": "Hazmatsuit Boots",
+      "item_group.firefighters_mod.testtab": "Testtab",
       "block.firefighters_mod.unifire": "Unifire",
+      "item.firefighters_mod.antiburn": "Antiburn",
+      "block.firefighters_mod.tiresslab": "Tiresslab",
+      "block.firefighters_mod.p_btank": "P-B tank",
+      "item.firefighters_mod.fire_extinguisher": "Fire Extinguisher",
+      "item.firefighters_mod.hazmatsuit_helmet": "Hazmatsuit Helmet",
+      "block.firefighters_mod.sfla": "Small flame",
+      "item.firefighters_mod.fire_hose": "Fire Hose",
+      "block.firefighters_mod.tires": "Tires",
+      "block.firefighters_mod.cardboardbox": "Cardboard box",
       "item_group.firefighters_mod.firefighters_mod": "Firefighters Mod",
+      "item.firefighters_mod.anti_smoke": "Anti Smoke",
       "item.firefighters_mod.firefighter_suit_boots": "Firefighter Boots",
       "item.firefighters_mod.firefighter_suit_helmet": "Firefighter Helmet",
-      "block.firefighters_mod.p_btank": "P-B tank",
-      "item.firefighters_mod.hazmatsuit_helmet": "Hazmatsuit Helmet",
       "block.firefighters_mod.smoke": "Smoke",
       "item.firefighters_mod.hazmatsuit_chestplate": "Hazmatsuit Chestplate",
-      "block.firefighters_mod.sfla": "Small flame",
       "item.firefighters_mod.hazmatsuit_leggings": "Hazmatsuit Leggings",
       "block.firefighters_mod.embersblock": "Embers block",
       "item.firefighters_mod.firefighter_suit_chestplate": "Firefighter Chestplate",
       "item.firefighters_mod.firefighter_suit_leggings": "Firefighter Leggings",
-      "block.firefighters_mod.tires": "Tires",
-      "block.firefighters_mod.cardboardbox": "Cardboard box"
+      "block.firefighters_mod.burning_tires": "Burning Tires"
     }
   },
   "foldersRoot": {
