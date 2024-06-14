@@ -1,4 +1,5 @@
 {
+  "block.firefighters_mod.burblock": "Burned block",
   "item.firefighters_mod.hazmatsuit_boots": "Hazmatsuit Boots",
   "block.firefighters_mod.unifire": "Unifire",
   "item_group.firefighters_mod.firefighters_mod": "Firefighters Mod",
@@ -8,6 +9,7 @@
   "item.firefighters_mod.hazmatsuit_helmet": "Hazmatsuit Helmet",
   "block.firefighters_mod.smoke": "Smoke",
   "item.firefighters_mod.hazmatsuit_chestplate": "Hazmatsuit Chestplate",
+  "block.firefighters_mod.sfla": "Small flame",
   "item.firefighters_mod.hazmatsuit_leggings": "Hazmatsuit Leggings",
   "block.firefighters_mod.embersblock": "Embers block",
   "item.firefighters_mod.firefighter_suit_chestplate": "Firefighter Chestplate",
