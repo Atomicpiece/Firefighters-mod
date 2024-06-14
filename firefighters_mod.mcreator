@@ -4,7 +4,7 @@
       "name": "Unifire",
       "type": "block",
       "sortid": 15,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "unifire",
       "metadata": {
@@ -341,7 +341,7 @@
       "name": "Sfla",
       "type": "block",
       "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sfla",
       "metadata": {
@@ -389,7 +389,7 @@
       "name": "Burblock",
       "type": "block",
       "sortid": 19,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "burblock",
       "metadata": {
