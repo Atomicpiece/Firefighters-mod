@@ -341,7 +341,7 @@
       "name": "Sfla",
       "type": "block",
       "sortid": 16,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "sfla",
       "metadata": {
@@ -389,7 +389,7 @@
       "name": "Burblock",
       "type": "block",
       "sortid": 19,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "burblock",
       "metadata": {
@@ -469,7 +469,7 @@
       "name": "Water",
       "type": "projectile",
       "sortid": 23,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "water",
       "metadata": {
@@ -841,7 +841,7 @@
       "name": "BurningTires",
       "type": "block",
       "sortid": 29,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "burning_tires",
       "metadata": {
@@ -918,7 +918,7 @@
       "name": "Tiresslab",
       "type": "block",
       "sortid": 30,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "tiresslab",
       "metadata": {
