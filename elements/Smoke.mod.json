@@ -105,6 +105,9 @@
     "luminance": 1,
     "unbreakable": false,
     "breakHarvestLevel": 1,
+    "placingCondition": {
+      "name": "SmokeBlockValidPlacementCondition"
+    },
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
