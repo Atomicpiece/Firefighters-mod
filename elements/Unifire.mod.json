@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:FirefightersMod"
     },
     "destroyTool": "Not specified",
     "customDrop": {
