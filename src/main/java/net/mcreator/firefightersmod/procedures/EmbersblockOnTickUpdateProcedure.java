@@ -26,7 +26,7 @@ public class EmbersblockOnTickUpdateProcedure {
 			for (int index1 = 0; index1 < 4; index1++) {
 				sz = -2;
 				for (int index2 = 0; index2 < 4; index2++) {
-					if (Mth.nextInt(RandomSource.create(), 1, 2400) == 2400) {
+					if (Mth.nextInt(RandomSource.create(), 1, 3600) == 3600) {
 						if (!world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz)).canOcclude()) {
 							world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), FirefightersModModBlocks.SMOKE.get().defaultBlockState(), 3);
 							found = true;
