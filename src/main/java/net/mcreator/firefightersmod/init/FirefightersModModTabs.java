@@ -6,19 +6,14 @@ package net.mcreator.firefightersmod.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.firefightersmod.FirefightersModMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FirefightersModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirefightersModMod.MODID);
 	public static final RegistryObject<CreativeModeTab> TESTTAB = REGISTRY.register("testtab",
@@ -41,6 +36,7 @@ public class FirefightersModModTabs {
 				tabData.accept(FirefightersModModBlocks.TIRES.get().asItem());
 				tabData.accept(FirefightersModModBlocks.CARDBOARDBOX.get().asItem());
 				tabData.accept(FirefightersModModBlocks.EMBERSBLOCK.get().asItem());
+				tabData.accept(FirefightersModModBlocks.UNIFIRE.get().asItem());
 				tabData.accept(FirefightersModModBlocks.SFLA.get().asItem());
 				tabData.accept(FirefightersModModBlocks.BURBLOCK.get().asItem());
 				tabData.accept(FirefightersModModItems.FIRE_HOSE.get());
@@ -49,11 +45,4 @@ public class FirefightersModModTabs {
 				tabData.accept(FirefightersModModBlocks.TIRESSLAB.get().asItem());
 				tabData.accept(FirefightersModModBlocks.BURTIRES.get().asItem());
 			}).withSearchBar().build());
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-			tabData.accept(FirefightersModModBlocks.UNIFIRE.get().asItem());
-		}
-	}
 }

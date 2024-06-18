@@ -72,22 +72,22 @@ public class EmbersblockOnTickUpdateProcedure {
 				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
 			world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
 		}
-		if (!world.getBlockState(BlockPos.containing(x + 1, y, z)).canOcclude()) {
+		if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x + 1, y, z))) {
 			world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 		}
-		if (!world.getBlockState(BlockPos.containing(x, y + 1, z)).canOcclude()) {
+		if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y + 1, z))) {
 			world.setBlock(BlockPos.containing(x, y + 1, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 		}
-		if (!world.getBlockState(BlockPos.containing(x, y, z + 1)).canOcclude()) {
+		if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z + 1))) {
 			world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 		}
-		if (!world.getBlockState(BlockPos.containing(x - 1, y, z)).canOcclude()) {
+		if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x - 1, y, z))) {
 			world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 		}
-		if (!world.getBlockState(BlockPos.containing(x, y - 1, z)).canOcclude()) {
+		if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y - 1, z))) {
 			world.setBlock(BlockPos.containing(x, y - 1, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 		}
-		if (!world.getBlockState(BlockPos.containing(x, y, z - 1)).canOcclude()) {
+		if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z - 1))) {
 			world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 		}
 	}

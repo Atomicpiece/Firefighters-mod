@@ -952,7 +952,7 @@
       "name": "Sfla",
       "type": "block",
       "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sfla",
       "metadata": {
@@ -962,6 +962,38 @@
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/sfla.json",
           "src/main/resources/assets/firefighters_mod/models/item/sfla.json",
           "src/main/resources/assets/firefighters_mod/blockstates/sfla.json"
+        ]
+      }
+    },
+    {
+      "name": "UnifireBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unifire_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/UnifireBlockValidPlacementConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
