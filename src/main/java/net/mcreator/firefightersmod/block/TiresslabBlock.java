@@ -1,7 +1,26 @@
 
 package net.mcreator.firefightersmod.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.firefightersmod.procedures.TiresslabOnTickUpdateProcedure;
+import net.mcreator.firefightersmod.procedures.TiresslabBlockAddedProcedure;
+import net.mcreator.firefightersmod.block.entity.TiresslabBlockEntity;
 
 public class TiresslabBlock extends SlabBlock implements EntityBlock {
 	public TiresslabBlock() {

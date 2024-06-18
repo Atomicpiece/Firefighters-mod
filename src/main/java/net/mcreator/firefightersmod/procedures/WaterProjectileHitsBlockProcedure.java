@@ -1,6 +1,10 @@
 package net.mcreator.firefightersmod.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.firefightersmod.init.FirefightersModModBlocks;
 
 public class WaterProjectileHitsBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -10,10 +14,10 @@ public class WaterProjectileHitsBlockProcedure {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FirefightersModModBlocks.EMBERSBLOCK.get()) {
 			world.setBlock(BlockPos.containing(x, y, z), FirefightersModModBlocks.BURBLOCK.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FirefightersModModItems.DELETED_MOD_ELEMENT.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FirefightersModModBlocks.BURNING_TIRES.get()) {
 			world.setBlock(BlockPos.containing(x, y, z), FirefightersModModBlocks.BURTIRES.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FirefightersModModItems.DELETED_MOD_ELEMENT.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FirefightersModModBlocks.TIRESSLAB.get()) {
 			world.setBlock(BlockPos.containing(x, y, z), FirefightersModModBlocks.BURTIRES.get().defaultBlockState(), 3);
 		}
 	}
