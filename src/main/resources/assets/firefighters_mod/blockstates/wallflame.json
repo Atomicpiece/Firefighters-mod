@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "firefighters_mod:block/wallflame"
+    },
+    "facing=east": {
+      "model": "firefighters_mod:block/wallflame",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "firefighters_mod:block/wallflame",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "firefighters_mod:block/wallflame",
+      "y": 270
+    }
+  }
+}

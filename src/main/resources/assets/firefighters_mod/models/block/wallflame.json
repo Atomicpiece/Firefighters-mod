@@ -1,0 +1,9 @@
+{
+  "parent": "firefighters_mod:custom/wallflame",
+  "textures": {
+    "all": "firefighters_mod:block/wallfires",
+    "particle": "firefighters_mod:block/wallfires",
+    "0": "firefighters_mod:block/wallfires"
+  },
+  "render_type": "cutout"
+}

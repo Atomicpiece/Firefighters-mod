@@ -14,6 +14,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.firefightersmod.block.WallflameBlock;
 import net.mcreator.firefightersmod.block.UnifireBlock;
 import net.mcreator.firefightersmod.block.TiresslabBlock;
 import net.mcreator.firefightersmod.block.TiresBlock;
@@ -40,6 +41,7 @@ public class FirefightersModModBlocks {
 	public static final RegistryObject<Block> BURNING_TIRES = REGISTRY.register("burning_tires", () -> new BurningTiresBlock());
 	public static final RegistryObject<Block> TIRESSLAB = REGISTRY.register("tiresslab", () -> new TiresslabBlock());
 	public static final RegistryObject<Block> SFLA = REGISTRY.register("sfla", () -> new SflaBlock());
+	public static final RegistryObject<Block> WALLFLAME = REGISTRY.register("wallflame", () -> new WallflameBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

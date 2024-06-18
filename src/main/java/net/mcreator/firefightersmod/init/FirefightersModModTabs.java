@@ -44,5 +44,6 @@ public class FirefightersModModTabs {
 				tabData.accept(FirefightersModModBlocks.BURNING_TIRES.get().asItem());
 				tabData.accept(FirefightersModModBlocks.TIRESSLAB.get().asItem());
 				tabData.accept(FirefightersModModBlocks.BURTIRES.get().asItem());
+				tabData.accept(FirefightersModModBlocks.WALLFLAME.get().asItem());
 			}).withSearchBar().build());
 }
