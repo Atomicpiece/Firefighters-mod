@@ -558,37 +558,6 @@
       }
     },
     {
-      "name": "EmbersblockBlockAdded",
-      "type": "procedure",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "embersblock_block_added",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/firefightersmod/procedures/EmbersblockBlockAddedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "TiresslabOnTickUpdate",
       "type": "procedure",
       "sortid": 36,
@@ -1071,7 +1040,12 @@
         "files": [
           "src/main/java/net/mcreator/firefightersmod/procedures/GlobrsetProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     }
   ],
