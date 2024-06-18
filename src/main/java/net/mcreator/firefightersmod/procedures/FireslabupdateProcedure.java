@@ -17,7 +17,7 @@ import net.mcreator.firefightersmod.network.FirefightersModModVariables;
 import net.mcreator.firefightersmod.init.FirefightersModModBlocks;
 import net.mcreator.firefightersmod.FirefightersModMod;
 
-public class EmbersblockOnTickUpdateProcedure {
+public class FireslabupdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		boolean found = false;
 		double sx = 0;
@@ -85,38 +85,26 @@ public class EmbersblockOnTickUpdateProcedure {
 				}
 			}
 			ran = Mth.nextInt(RandomSource.create(), 1, 24);
-			if (ran < 5 && ran > 0 && (world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
-				world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+			if (ran < 7 && ran > 0 && (world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
+				world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.TIRESSLAB.get().defaultBlockState(), 3);
 			}
-			if (ran < 9 && ran > 4 && (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+			if (ran < 13 && ran > 6 && (world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
+				world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.TIRESSLAB.get().defaultBlockState(), 3);
 			}
-			if (ran < 13 && ran > 8 && (world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
-				world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+			if (ran < 19 && ran > 12 && (world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
+				world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.TIRESSLAB.get().defaultBlockState(), 3);
 			}
-			if (ran < 17 && ran > 12 && (world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
-				world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
-			}
-			if (ran < 21 && ran > 16 && (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
-				world.setBlock(BlockPos.containing(x, y - 1, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
-			}
-			if (ran < 25 && ran > 20 && (world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
-				world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
+			if (ran < 25 && ran > 18 && (world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
+				world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.TIRESSLAB.get().defaultBlockState(), 3);
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x + 1, y, z))) {
 				world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
-			}
-			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y + 1, z))) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z + 1))) {
 				world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x - 1, y, z))) {
 				world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
-			}
-			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y - 1, z))) {
-				world.setBlock(BlockPos.containing(x, y - 1, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z - 1))) {
 				world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
@@ -129,7 +117,7 @@ public class EmbersblockOnTickUpdateProcedure {
 					return -1;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "firan") == 30) {
-				world.setBlock(BlockPos.containing(x, y, z), FirefightersModModBlocks.BURBLOCK.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y, z), FirefightersModModBlocks.BURTIRES.get().defaultBlockState(), 3);
 			}
 			FirefightersModMod.queueServerWork((int) (Mth.nextInt(RandomSource.create(), 1, 5) * 20), () -> {
 				if (!world.isClientSide()) {

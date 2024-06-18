@@ -558,37 +558,6 @@
       }
     },
     {
-      "name": "TiresslabOnTickUpdate",
-      "type": "procedure",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tiresslab_on_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/firefightersmod/procedures/TiresslabOnTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "FireHoseItemInHandTick",
       "type": "procedure",
       "sortid": 25,
@@ -1041,6 +1010,37 @@
           "src/main/java/net/mcreator/firefightersmod/procedures/GlobrsetProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fireslabupdate",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireslabupdate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/FireslabupdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
           {
             "name": "world",
             "type": "world"

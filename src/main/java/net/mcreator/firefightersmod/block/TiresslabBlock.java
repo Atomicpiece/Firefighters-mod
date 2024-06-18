@@ -18,8 +18,8 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.firefightersmod.procedures.TiresslabOnTickUpdateProcedure;
 import net.mcreator.firefightersmod.procedures.TiresslabBlockAddedProcedure;
+import net.mcreator.firefightersmod.procedures.FireslabupdateProcedure;
 import net.mcreator.firefightersmod.block.entity.TiresslabBlockEntity;
 
 public class TiresslabBlock extends SlabBlock implements EntityBlock {
@@ -45,7 +45,7 @@ public class TiresslabBlock extends SlabBlock implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		TiresslabOnTickUpdateProcedure.execute(world, x, y, z);
+		FireslabupdateProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 15);
 	}
 
