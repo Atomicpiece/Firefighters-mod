@@ -1047,6 +1047,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "Wallflame",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallflame",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/wallflame.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/WallflameBlockEntity.java",
+          "src/main/resources/assets/firefighters_mod/models/block/wallflame.json",
+          "src/main/java/net/mcreator/firefightersmod/block/WallflameBlock.java",
+          "src/main/resources/assets/firefighters_mod/models/item/wallflame.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/wallflame.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1407,6 +1425,7 @@
       "block.firefighters_mod.burblock": "Burned block",
       "item.firefighters_mod.hazmatsuit_boots": "Hazmatsuit Boots",
       "item_group.firefighters_mod.testtab": "Testtab",
+      "block.firefighters_mod.wallflame": "Wall flame",
       "block.firefighters_mod.unifire": "Unifire",
       "item.firefighters_mod.antiburn": "Antiburn",
       "block.firefighters_mod.tiresslab": "Tiresslab",

@@ -1,21 +1,6 @@
 package net.mcreator.firefightersmod.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.firefightersmod.network.FirefightersModModVariables;
-import net.mcreator.firefightersmod.init.FirefightersModModBlocks;
-import net.mcreator.firefightersmod.FirefightersModMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class FireslabupdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

@@ -45,6 +45,7 @@ public class FirefightersModModItems {
 	public static final RegistryObject<Item> FIRE_HOSE = REGISTRY.register("fire_hose", () -> new FireHoseItem());
 	public static final RegistryObject<Item> TIRESSLAB = block(FirefightersModModBlocks.TIRESSLAB);
 	public static final RegistryObject<Item> SFLA = block(FirefightersModModBlocks.SFLA);
+	public static final RegistryObject<Item> WALLFLAME = block(FirefightersModModBlocks.WALLFLAME);
 
 	// Start of user code block custom items
 	// End of user code block custom items
