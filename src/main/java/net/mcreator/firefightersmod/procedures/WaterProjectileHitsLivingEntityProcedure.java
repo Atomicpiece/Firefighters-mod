@@ -14,6 +14,9 @@ public class WaterProjectileHitsLivingEntityProcedure {
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles((SimpleParticleType) (FirefightersModModParticleTypes.WATTER.get()), x, y, z, 1, 0.1, 0.1, 0.1, 0.1);
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FirefightersModModBlocks.UNIFIRE.get()) {
+			world.setBlock(BlockPos.containing(x, y, z), FirefightersModModBlocks.SFLA.get().defaultBlockState(), 3);
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FirefightersModModBlocks.SFLA.get()) {
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		}
 	}

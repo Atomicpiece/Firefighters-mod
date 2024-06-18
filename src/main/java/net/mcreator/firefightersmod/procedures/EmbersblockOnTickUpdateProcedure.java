@@ -2,7 +2,6 @@ package net.mcreator.firefightersmod.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.util.RandomSource;
@@ -48,28 +47,22 @@ public class EmbersblockOnTickUpdateProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(BlockPos.containing(x + 1, y, z)))
-				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+		if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
 			world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y + 1, z)))
-				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
 			world.setBlock(BlockPos.containing(x, y + 1, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z + 1)))
-				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
 			world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x - 1, y, z)))
-				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+		if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
 			world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y - 1, z)))
-				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
 			world.setBlock(BlockPos.containing(x, y - 1, z), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z - 1)))
-				.getBlock() == (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:burnables"))).getRandomElement(RandomSource.create()).orElseGet(() -> Blocks.AIR))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:burnables")))) {
 			world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.EMBERSBLOCK.get().defaultBlockState(), 3);
 		}
 		if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x + 1, y, z))) {
