@@ -34,7 +34,7 @@ public class EmbersblockOnTickUpdateProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				FirefightersModModVariables.WorldVariables.get(world).globrset = false;
+				FirefightersModModVariables.WorldVariables.get(world).globrset = true;
 				FirefightersModModVariables.WorldVariables.get(world).syncData(world);
 			});
 		}
