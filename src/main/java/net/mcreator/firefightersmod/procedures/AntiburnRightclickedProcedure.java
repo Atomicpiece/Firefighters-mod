@@ -24,7 +24,8 @@ public class AntiburnRightclickedProcedure {
 			for (int index1 = 0; index1 < 30; index1++) {
 				sz = -15;
 				for (int index2 = 0; index2 < 30; index2++) {
-					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == FirefightersModModBlocks.BURBLOCK.get()) {
+					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == FirefightersModModBlocks.BURBLOCK.get()
+							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == FirefightersModModBlocks.BURTIRES.get()) {
 						world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), Blocks.AIR.defaultBlockState(), 3);
 						found = true;
 					}

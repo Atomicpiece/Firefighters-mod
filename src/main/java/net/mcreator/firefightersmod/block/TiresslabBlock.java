@@ -35,7 +35,7 @@ public class TiresslabBlock extends SlabBlock implements EntityBlock {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 1);
+		world.scheduleTick(pos, this, 15);
 		TiresslabBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
@@ -46,7 +46,7 @@ public class TiresslabBlock extends SlabBlock implements EntityBlock {
 		int y = pos.getY();
 		int z = pos.getZ();
 		TiresslabOnTickUpdateProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 1);
+		world.scheduleTick(pos, this, 15);
 	}
 
 	@Override

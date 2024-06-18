@@ -57,7 +57,7 @@ public class SmokeBlock extends Block implements EntityBlock {
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 5;
+		return 10;
 	}
 
 	@Override
