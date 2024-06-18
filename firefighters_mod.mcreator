@@ -4,7 +4,7 @@
       "name": "Unifire",
       "type": "block",
       "sortid": 15,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "unifire",
       "metadata": {
@@ -952,7 +952,7 @@
       "name": "Sfla",
       "type": "block",
       "sortid": 16,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "sfla",
       "metadata": {
@@ -969,7 +969,7 @@
       "name": "UnifireBlockValidPlacementCondition",
       "type": "procedure",
       "sortid": 42,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "unifire_block_valid_placement_condition",
       "metadata": {
