@@ -128,7 +128,7 @@ public class EmbersblockOnTickUpdateProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, BlockPos.containing(x, y, z), "firan") == 30) {
+			}.getValue(world, BlockPos.containing(x, y, z), "firan") == 6) {
 				world.setBlock(BlockPos.containing(x, y, z), FirefightersModModBlocks.BURBLOCK.get().defaultBlockState(), 3);
 			}
 			FirefightersModMod.queueServerWork((int) (Mth.nextInt(RandomSource.create(), 1, 5) * 20), () -> {
