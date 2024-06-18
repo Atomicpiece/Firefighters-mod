@@ -1,6 +1,14 @@
 package net.mcreator.firefightersmod.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+
+import net.minecraft.world.level.LevelAccessor;
+
+import net.mcreator.firefightersmod.network.FirefightersModModVariables;
+
+import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class GlobrsetProcedure {
