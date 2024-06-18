@@ -17,7 +17,7 @@ import net.mcreator.firefightersmod.FirefightersModMod;
 
 public class UnifireOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (FirefightersModModVariables.WorldVariables.get(world).globrset == true) {
+		if (FirefightersModModVariables.WorldVariables.get(world).globrset == false) {
 			FirefightersModMod.queueServerWork(20, () -> {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
@@ -28,7 +28,7 @@ public class UnifireOnTickUpdateProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				FirefightersModModVariables.WorldVariables.get(world).globrset = false;
+				FirefightersModModVariables.WorldVariables.get(world).globrset = true;
 				FirefightersModModVariables.WorldVariables.get(world).syncData(world);
 			});
 		}
