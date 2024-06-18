@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class UnifireOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (Mth.nextInt(RandomSource.create(), 1, 500) == 500) {
+		if (Mth.nextInt(RandomSource.create(), 1, 50) == 50) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = FirefightersModModBlocks.SMOKE.get().defaultBlockState();
