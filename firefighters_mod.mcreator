@@ -1028,9 +1028,35 @@
           }
         ]
       }
+    },
+    {
+      "name": "Globrset",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "globrset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/GlobrsetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "globrset",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:slab_burnables": [
