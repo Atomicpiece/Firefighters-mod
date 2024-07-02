@@ -20,6 +20,7 @@ public class FirefightersModModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.firefighters_mod.testtab")).icon(() -> new ItemStack(FirefightersModModBlocks.SMOKE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FirefightersModModItems.ANTI_SMOKE.get());
 				tabData.accept(FirefightersModModItems.ANTIBURN.get());
+				tabData.accept(FirefightersModModItems.DEFORESTER.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> FIREFIGHTERS_MOD = REGISTRY.register("firefighters_mod",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.firefighters_mod.firefighters_mod")).icon(() -> new ItemStack(FirefightersModModItems.FIREFIGHTER_SUIT_CHESTPLATE.get())).displayItems((parameters, tabData) -> {

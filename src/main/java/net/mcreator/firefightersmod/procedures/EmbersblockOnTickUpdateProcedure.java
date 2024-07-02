@@ -105,21 +105,33 @@ public class EmbersblockOnTickUpdateProcedure {
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x + 1, y, z))) {
 				world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
+			} else if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:breathable")))
+					&& FirefightersModModBlocks.WALLFLAME.get().defaultBlockState().canSurvive(world, BlockPos.containing(x + 1, y, z))) {
+				world.setBlock(BlockPos.containing(x + 1, y, z), FirefightersModModBlocks.WALLFLAME.get().defaultBlockState(), 3);
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y + 1, z))) {
 				world.setBlock(BlockPos.containing(x, y + 1, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z + 1))) {
 				world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:breathable")))
+					&& FirefightersModModBlocks.WALLFLAME.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z + 1))) {
+				world.setBlock(BlockPos.containing(x, y, z + 1), FirefightersModModBlocks.WALLFLAME.get().defaultBlockState(), 3);
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x - 1, y, z))) {
 				world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
+			} else if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:breathable")))
+					&& FirefightersModModBlocks.WALLFLAME.get().defaultBlockState().canSurvive(world, BlockPos.containing(x - 1, y, z))) {
+				world.setBlock(BlockPos.containing(x - 1, y, z), FirefightersModModBlocks.WALLFLAME.get().defaultBlockState(), 3);
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y - 1, z))) {
 				world.setBlock(BlockPos.containing(x, y - 1, z), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 			}
 			if (FirefightersModModBlocks.UNIFIRE.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z - 1))) {
 				world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:breathable")))
+					&& FirefightersModModBlocks.WALLFLAME.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z - 1))) {
+				world.setBlock(BlockPos.containing(x, y, z - 1), FirefightersModModBlocks.WALLFLAME.get().defaultBlockState(), 3);
 			}
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {

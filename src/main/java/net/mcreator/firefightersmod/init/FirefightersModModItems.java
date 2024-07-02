@@ -16,6 +16,7 @@ import net.mcreator.firefightersmod.item.HazmatsuitItem;
 import net.mcreator.firefightersmod.item.FirefighterSuitItem;
 import net.mcreator.firefightersmod.item.FireHoseItem;
 import net.mcreator.firefightersmod.item.FireExtinguisherItem;
+import net.mcreator.firefightersmod.item.DeforesterItem;
 import net.mcreator.firefightersmod.item.AntiburnItem;
 import net.mcreator.firefightersmod.item.AntiSmokeItem;
 import net.mcreator.firefightersmod.FirefightersModMod;
@@ -46,6 +47,7 @@ public class FirefightersModModItems {
 	public static final RegistryObject<Item> TIRESSLAB = block(FirefightersModModBlocks.TIRESSLAB);
 	public static final RegistryObject<Item> SFLA = block(FirefightersModModBlocks.SFLA);
 	public static final RegistryObject<Item> WALLFLAME = block(FirefightersModModBlocks.WALLFLAME);
+	public static final RegistryObject<Item> DEFORESTER = REGISTRY.register("deforester", () -> new DeforesterItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

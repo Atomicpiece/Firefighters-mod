@@ -9,12 +9,12 @@
       "registry_name": "unifire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/models/item/unifire.json",
-          "src/main/resources/assets/firefighters_mod/models/block/unifire.json",
-          "src/main/java/net/mcreator/firefightersmod/block/entity/UnifireBlockEntity.java",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/unifire.json",
+          "src/main/resources/assets/firefighters_mod/models/block/unifire.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/unifire.json",
           "src/main/java/net/mcreator/firefightersmod/block/UnifireBlock.java",
-          "src/main/resources/assets/firefighters_mod/blockstates/unifire.json"
+          "src/main/resources/assets/firefighters_mod/models/item/unifire.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/UnifireBlockEntity.java"
         ]
       }
     },
@@ -58,11 +58,11 @@
       "registry_name": "hazmatsuit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_helmet.json",
-          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_chestplate.json",
-          "src/main/java/net/mcreator/firefightersmod/item/HazmatsuitItem.java",
           "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_leggings.json",
-          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_boots.json"
+          "src/main/java/net/mcreator/firefightersmod/item/HazmatsuitItem.java",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_boots.json",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_helmet.json",
+          "src/main/resources/assets/firefighters_mod/models/item/hazmatsuit_chestplate.json"
         ]
       }
     },
@@ -75,11 +75,11 @@
       "registry_name": "p_btank",
       "metadata": {
         "files": [
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/p_btank.json",
           "src/main/resources/assets/firefighters_mod/models/block/p_btank.json",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/PBtankBlockEntity.java",
           "src/main/resources/assets/firefighters_mod/models/item/p_btank.json",
           "src/main/resources/assets/firefighters_mod/blockstates/p_btank.json",
-          "src/main/java/net/mcreator/firefightersmod/block/entity/PBtankBlockEntity.java",
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/p_btank.json",
           "src/main/java/net/mcreator/firefightersmod/block/PBtankBlock.java"
         ]
       }
@@ -124,12 +124,12 @@
       "registry_name": "smoke",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/firefightersmod/block/entity/SmokeBlockEntity.java",
           "src/main/java/net/mcreator/firefightersmod/block/SmokeBlock.java",
           "src/main/resources/assets/firefighters_mod/models/item/smoke.json",
           "src/main/resources/assets/firefighters_mod/blockstates/smoke.json",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/smoke.json",
-          "src/main/resources/assets/firefighters_mod/models/block/smoke.json",
-          "src/main/java/net/mcreator/firefightersmod/block/entity/SmokeBlockEntity.java"
+          "src/main/resources/assets/firefighters_mod/models/block/smoke.json"
         ]
       }
     },
@@ -142,11 +142,11 @@
       "registry_name": "cardboardbox",
       "metadata": {
         "files": [
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/cardboardbox.json",
           "src/main/resources/assets/firefighters_mod/blockstates/cardboardbox.json",
-          "src/main/resources/assets/firefighters_mod/models/block/cardboardbox.json",
           "src/main/resources/assets/firefighters_mod/models/item/cardboardbox.json",
-          "src/main/java/net/mcreator/firefightersmod/block/CardboardboxBlock.java"
+          "src/main/java/net/mcreator/firefightersmod/block/CardboardboxBlock.java",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/cardboardbox.json",
+          "src/main/resources/assets/firefighters_mod/models/block/cardboardbox.json"
         ]
       }
     },
@@ -190,12 +190,12 @@
       "registry_name": "embersblock",
       "metadata": {
         "files": [
+          "src/main/resources/assets/firefighters_mod/models/block/embersblock.json",
           "src/main/resources/assets/firefighters_mod/blockstates/embersblock.json",
+          "src/main/resources/assets/firefighters_mod/models/item/embersblock.json",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/embersblock.json",
           "src/main/java/net/mcreator/firefightersmod/block/entity/EmbersblockBlockEntity.java",
-          "src/main/java/net/mcreator/firefightersmod/block/EmbersblockBlock.java",
-          "src/main/resources/assets/firefighters_mod/models/item/embersblock.json",
-          "src/main/resources/assets/firefighters_mod/models/block/embersblock.json"
+          "src/main/java/net/mcreator/firefightersmod/block/EmbersblockBlock.java"
         ]
       }
     },
@@ -239,11 +239,11 @@
       "registry_name": "firefighter_suit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/firefightersmod/item/FirefighterSuitItem.java",
-          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_chestplate.json",
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_helmet.json",
           "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_leggings.json",
           "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_boots.json",
-          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_helmet.json"
+          "src/main/resources/assets/firefighters_mod/models/item/firefighter_suit_chestplate.json",
+          "src/main/java/net/mcreator/firefightersmod/item/FirefighterSuitItem.java"
         ]
       }
     },
@@ -329,11 +329,11 @@
       "registry_name": "tires",
       "metadata": {
         "files": [
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/tires.json",
-          "src/main/resources/assets/firefighters_mod/blockstates/tires.json",
           "src/main/resources/assets/firefighters_mod/models/item/tires.json",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/tires.json",
+          "src/main/resources/assets/firefighters_mod/models/block/tires.json",
           "src/main/java/net/mcreator/firefightersmod/block/TiresBlock.java",
-          "src/main/resources/assets/firefighters_mod/models/block/tires.json"
+          "src/main/resources/assets/firefighters_mod/blockstates/tires.json"
         ]
       }
     },
@@ -439,12 +439,12 @@
       "registry_name": "burblock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/firefightersmod/block/BurblockBlock.java",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/burblock.json",
           "src/main/resources/assets/firefighters_mod/blockstates/burblock.json",
-          "src/main/resources/assets/firefighters_mod/models/block/burblock.json",
           "src/main/resources/assets/firefighters_mod/models/item/burblock.json",
+          "src/main/java/net/mcreator/firefightersmod/block/BurblockBlock.java",
           "src/main/java/net/mcreator/firefightersmod/block/entity/BurblockBlockEntity.java",
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/burblock.json"
+          "src/main/resources/assets/firefighters_mod/models/block/burblock.json"
         ]
       }
     },
@@ -502,8 +502,8 @@
       "registry_name": "fire_extinguisher",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/models/item/fire_extinguisher.json",
-          "src/main/java/net/mcreator/firefightersmod/item/FireExtinguisherItem.java"
+          "src/main/java/net/mcreator/firefightersmod/item/FireExtinguisherItem.java",
+          "src/main/resources/assets/firefighters_mod/models/item/fire_extinguisher.json"
         ]
       }
     },
@@ -641,13 +641,13 @@
       "registry_name": "burtires",
       "metadata": {
         "files": [
-          "src/main/resources/assets/firefighters_mod/models/block/burtires_full.json",
           "src/main/resources/assets/firefighters_mod/models/block/burtires.json",
-          "src/main/resources/assets/firefighters_mod/blockstates/burtires.json",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/burtires.json",
           "src/main/resources/assets/firefighters_mod/models/block/burtires_top.json",
           "src/main/java/net/mcreator/firefightersmod/block/BurtiresBlock.java",
-          "src/main/resources/assets/firefighters_mod/models/item/burtires.json",
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/burtires.json"
+          "src/main/resources/assets/firefighters_mod/models/block/burtires_full.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/burtires.json",
+          "src/main/resources/assets/firefighters_mod/models/item/burtires.json"
         ]
       }
     },
@@ -769,10 +769,10 @@
         "files": [
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/burning_tires.json",
           "src/main/java/net/mcreator/firefightersmod/block/entity/BurningTiresBlockEntity.java",
-          "src/main/resources/assets/firefighters_mod/models/item/burning_tires.json",
           "src/main/resources/assets/firefighters_mod/blockstates/burning_tires.json",
+          "src/main/java/net/mcreator/firefightersmod/block/BurningTiresBlock.java",
           "src/main/resources/assets/firefighters_mod/models/block/burning_tires.json",
-          "src/main/java/net/mcreator/firefightersmod/block/BurningTiresBlock.java"
+          "src/main/resources/assets/firefighters_mod/models/item/burning_tires.json"
         ]
       }
     },
@@ -799,8 +799,8 @@
       "registry_name": "fire_hose",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/firefightersmod/item/FireHoseItem.java",
-          "src/main/resources/assets/firefighters_mod/models/item/fire_hose.json"
+          "src/main/resources/assets/firefighters_mod/models/item/fire_hose.json",
+          "src/main/java/net/mcreator/firefightersmod/item/FireHoseItem.java"
         ]
       }
     },
@@ -844,14 +844,14 @@
       "registry_name": "tiresslab",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/firefightersmod/block/TiresslabBlock.java",
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/tiresslab.json",
-          "src/main/resources/assets/firefighters_mod/models/block/tiresslab_top.json",
-          "src/main/resources/assets/firefighters_mod/blockstates/tiresslab.json",
           "src/main/resources/assets/firefighters_mod/models/block/tiresslab_full.json",
           "src/main/resources/assets/firefighters_mod/models/item/tiresslab.json",
           "src/main/java/net/mcreator/firefightersmod/block/entity/TiresslabBlockEntity.java",
-          "src/main/resources/assets/firefighters_mod/models/block/tiresslab.json"
+          "src/main/resources/assets/firefighters_mod/models/block/tiresslab.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/tiresslab.json",
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/tiresslab.json",
+          "src/main/java/net/mcreator/firefightersmod/block/TiresslabBlock.java",
+          "src/main/resources/assets/firefighters_mod/models/block/tiresslab_top.json"
         ]
       }
     },
@@ -897,8 +897,8 @@
         "files": [
           "src/main/java/net/mcreator/firefightersmod/block/SflaBlock.java",
           "src/main/resources/assets/firefighters_mod/models/block/sfla.json",
-          "src/main/resources/assets/firefighters_mod/models/item/sfla.json",
           "src/main/resources/data/firefighters_mod/loot_tables/blocks/sfla.json",
+          "src/main/resources/assets/firefighters_mod/models/item/sfla.json",
           "src/main/resources/assets/firefighters_mod/blockstates/sfla.json"
         ]
       }
@@ -1057,12 +1057,120 @@
       "registry_name": "wallflame",
       "metadata": {
         "files": [
-          "src/main/resources/data/firefighters_mod/loot_tables/blocks/wallflame.json",
-          "src/main/java/net/mcreator/firefightersmod/block/entity/WallflameBlockEntity.java",
-          "src/main/resources/assets/firefighters_mod/models/block/wallflame.json",
-          "src/main/java/net/mcreator/firefightersmod/block/WallflameBlock.java",
           "src/main/resources/assets/firefighters_mod/models/item/wallflame.json",
-          "src/main/resources/assets/firefighters_mod/blockstates/wallflame.json"
+          "src/main/resources/data/firefighters_mod/loot_tables/blocks/wallflame.json",
+          "src/main/resources/assets/firefighters_mod/blockstates/wallflame.json",
+          "src/main/java/net/mcreator/firefightersmod/block/WallflameBlock.java",
+          "src/main/java/net/mcreator/firefightersmod/block/entity/WallflameBlockEntity.java",
+          "src/main/resources/assets/firefighters_mod/models/block/wallflame.json"
+        ]
+      }
+    },
+    {
+      "name": "Deforester",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deforester",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/firefighters_mod/models/item/deforester.json",
+          "src/main/java/net/mcreator/firefightersmod/item/DeforesterItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DeforesterRightclicked",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deforester_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/DeforesterRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WallflameBlockAdded",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallflame_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/WallflameBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WallflameBlockValidPlacementCondition",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallflame_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/firefightersmod/procedures/WallflameBlockValidPlacementConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -1077,6 +1185,18 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:leaves": [
+      "Blocks.LEAVES#0",
+      "Blocks.LEAVES#1",
+      "Blocks.LEAVES#2",
+      "Blocks.LEAVES#3",
+      "Blocks.LEAVES2#0",
+      "Blocks.LEAVES2#1",
+      "Blocks.MANGROVE_LEAVES",
+      "Blocks.AZALEA_LEAVES",
+      "Blocks.FLOWERING_AZALEA_LEAVES",
+      "Blocks.CHERRY_LEAVES"
+    ],
     "BLOCKS:minecraft:slab_burnables": [
       "Blocks.SAPLING#0",
       "Blocks.SAPLING#1",
@@ -1417,6 +1537,42 @@
       "Blocks.LECTERN",
       "Blocks.COMPOSTER",
       "Blocks.BEEHIVE"
+    ],
+    "BLOCKS:minecraft:burned": [
+      "CUSTOM:Embersblock",
+      "CUSTOM:BurningTires",
+      "CUSTOM:Tiresslab"
+    ],
+    "BLOCKS:minecraft:logs": [
+      "Blocks.LOG#0",
+      "Blocks.LOG#1",
+      "Blocks.LOG#2",
+      "Blocks.LOG#3",
+      "Blocks.LOG2#0",
+      "Blocks.LOG2#1",
+      "Blocks.MANGROVE_LOG",
+      "Blocks.CHERRY_LOG",
+      "Blocks.STRIPPED_OAK_LOG",
+      "Blocks.STRIPPED_SPRUCE_LOG",
+      "Blocks.STRIPPED_BIRCH_LOG",
+      "Blocks.STRIPPED_JUNGLE_LOG",
+      "Blocks.STRIPPED_ACACIA_LOG",
+      "Blocks.STRIPPED_DARK_OAK_LOG",
+      "Blocks.STRIPPED_MANGROVE_LOG",
+      "Blocks.STRIPPED_CHERRY_LOG",
+      "Blocks.WARPED_STEM",
+      "Blocks.CRIMSON_STEM",
+      "Blocks.STRIPPED_WARPED_STEM",
+      "Blocks.STRIPPED_CRIMSON_STEM",
+      "Blocks.MUSHROOM_STEM",
+      "Blocks.BROWN_MUSHROOM_BLOCK",
+      "Blocks.RED_MUSHROOM_BLOCK"
+    ],
+    "ITEMS:minecraft:breathable": [
+      "Blocks.AIR",
+      "Blocks.VOID_AIR",
+      "Blocks.CAVE_AIR",
+      "CUSTOM:Smoke"
     ]
   },
   "language_map": {
@@ -1436,6 +1592,7 @@
       "block.firefighters_mod.sfla": "Small flame",
       "block.firefighters_mod.tires": "Tires",
       "block.firefighters_mod.cardboardbox": "Cardboard box",
+      "item.firefighters_mod.deforester": "Deforester",
       "item_group.firefighters_mod.firefighters_mod": "Firefighters Mod",
       "item.firefighters_mod.anti_smoke": "Anti Smoke",
       "item.firefighters_mod.firefighter_suit_boots": "Firefighter Boots",
