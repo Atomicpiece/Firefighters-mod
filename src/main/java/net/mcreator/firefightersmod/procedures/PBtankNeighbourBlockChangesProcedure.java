@@ -30,8 +30,8 @@ public class PBtankNeighbourBlockChangesProcedure {
 				for (int index1 = 0; index1 < 6; index1++) {
 					sz = -3;
 					for (int index2 = 0; index2 < 6; index2++) {
-						if (Mth.nextInt(RandomSource.create(), 1, 5) == 5) {
-							if (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz)).canOcclude()) {
+						if (Mth.nextInt(RandomSource.create(), 1, 10) == 10) {
+							if (!world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz)).canOcclude()) {
 								world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), FirefightersModModBlocks.UNIFIRE.get().defaultBlockState(), 3);
 								found = true;
 							}

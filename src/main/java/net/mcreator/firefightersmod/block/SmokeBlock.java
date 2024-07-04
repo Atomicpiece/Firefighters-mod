@@ -94,7 +94,7 @@ public class SmokeBlock extends Block implements EntityBlock {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 5);
+		world.scheduleTick(pos, this, 10);
 		SmokeBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
@@ -105,7 +105,7 @@ public class SmokeBlock extends Block implements EntityBlock {
 		int y = pos.getY();
 		int z = pos.getZ();
 		SmokeOnTickUpdateProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 5);
+		world.scheduleTick(pos, this, 10);
 	}
 
 	@Override

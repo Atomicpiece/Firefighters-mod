@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
+    "firefighters_mod:smoke",
     "minecraft:air",
     "minecraft:void_air",
-    "minecraft:cave_air",
-    "firefighters_mod:smoke"
+    "minecraft:cave_air"
   ]
 }

@@ -2,25 +2,25 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "smoke",
-    "textureTop": "smoke",
-    "textureLeft": "smoke",
-    "textureFront": "smoke",
-    "textureRight": "smoke",
-    "textureBack": "smoke",
-    "renderType": 10,
-    "customModelName": "Normal",
-    "rotationMode": 0,
+    "texture": "barrel",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "barrel:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "tintType": "Fog",
+    "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
-    "connectedSides": true,
-    "transparencyType": "TRANSLUCENT",
+    "connectedSides": false,
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,59 +33,55 @@
         "subtract": false
       }
     ],
-    "name": "Smoke",
+    "name": "Barrel",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 3.0,
+    "resistance": 5000.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:FirefightersMod"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 0,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 10,
+    "lightOpacity": 0,
     "material": {
-      "value": "LEAVES"
+      "value": "IRON"
     },
-    "tickRate": 10,
+    "tickRate": 20,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "GRAY",
+    "colorOnMap": "YELLOW",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "beaconColorModifier": {
-      "value": -10066330,
-      "falpha": 0.0
-    },
-    "flammability": 1000,
+    "flammability": 1,
     "fireSpreadSpeed": 1000,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "VINE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -104,10 +100,7 @@
     },
     "luminance": 1,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
-    "placingCondition": {
-      "name": "SmokeBlockValidPlacementCondition"
-    },
+    "breakHarvestLevel": 2,
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
@@ -126,17 +119,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "SmokeBlockAdded"
-    },
     "onTickUpdate": {
-      "name": "SmokeOnTickUpdate"
-    },
-    "onEntityCollides": {
-      "name": "SmokeEntityCollidesInTheBlock"
-    },
-    "onEntityWalksOn": {
-      "name": "SmokeEntityWalksOnTheBlock"
+      "name": "BarrelNeighbourBlockChanges"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "firefighters_mod:block/barrel"
+    },
+    "facing=east": {
+      "model": "firefighters_mod:block/barrel",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "firefighters_mod:block/barrel",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "firefighters_mod:block/barrel",
+      "y": 270
+    }
+  }
+}

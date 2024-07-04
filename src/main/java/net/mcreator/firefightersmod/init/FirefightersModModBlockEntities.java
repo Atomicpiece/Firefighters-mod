@@ -19,6 +19,7 @@ import net.mcreator.firefightersmod.block.entity.PBtankBlockEntity;
 import net.mcreator.firefightersmod.block.entity.EmbersblockBlockEntity;
 import net.mcreator.firefightersmod.block.entity.BurningTiresBlockEntity;
 import net.mcreator.firefightersmod.block.entity.BurblockBlockEntity;
+import net.mcreator.firefightersmod.block.entity.BarrelBlockEntity;
 import net.mcreator.firefightersmod.FirefightersModMod;
 
 public class FirefightersModModBlockEntities {
@@ -31,6 +32,7 @@ public class FirefightersModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> BURNING_TIRES = register("burning_tires", FirefightersModModBlocks.BURNING_TIRES, BurningTiresBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> TIRESSLAB = register("tiresslab", FirefightersModModBlocks.TIRESSLAB, TiresslabBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> WALLFLAME = register("wallflame", FirefightersModModBlocks.WALLFLAME, WallflameBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BARREL = register("barrel", FirefightersModModBlocks.BARREL, BarrelBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

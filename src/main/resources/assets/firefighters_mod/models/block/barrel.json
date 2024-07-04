@@ -1,0 +1,9 @@
+{
+  "parent": "firefighters_mod:custom/barrel",
+  "textures": {
+    "all": "firefighters_mod:block/barrel",
+    "particle": "firefighters_mod:block/barrel",
+    "0": "firefighters_mod:block/barrel"
+  },
+  "render_type": "cutout"
+}

@@ -15,7 +15,7 @@
     "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "nothing",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -81,7 +81,7 @@
     "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "EMPTY"
     },
     "breakSound": {
       "value": ""

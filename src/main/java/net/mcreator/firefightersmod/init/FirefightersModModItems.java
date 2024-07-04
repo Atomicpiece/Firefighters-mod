@@ -12,6 +12,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.firefightersmod.item.MatchesItem;
+import net.mcreator.firefightersmod.item.MatchItem;
 import net.mcreator.firefightersmod.item.HazmatsuitItem;
 import net.mcreator.firefightersmod.item.FirefighterSuitItem;
 import net.mcreator.firefightersmod.item.FireHoseItem;
@@ -48,6 +50,9 @@ public class FirefightersModModItems {
 	public static final RegistryObject<Item> SFLA = block(FirefightersModModBlocks.SFLA);
 	public static final RegistryObject<Item> WALLFLAME = block(FirefightersModModBlocks.WALLFLAME);
 	public static final RegistryObject<Item> DEFORESTER = REGISTRY.register("deforester", () -> new DeforesterItem());
+	public static final RegistryObject<Item> BARREL = block(FirefightersModModBlocks.BARREL);
+	public static final RegistryObject<Item> MATCH = REGISTRY.register("match", () -> new MatchItem());
+	public static final RegistryObject<Item> MATCHES = REGISTRY.register("matches", () -> new MatchesItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
