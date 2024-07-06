@@ -63,7 +63,7 @@ public class SflaBlock extends Block {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 1);
+		world.scheduleTick(pos, this, 20);
 	}
 
 	@Override
@@ -73,6 +73,6 @@ public class SflaBlock extends Block {
 		int y = pos.getY();
 		int z = pos.getZ();
 		SflaOnTickUpdateProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 1);
+		world.scheduleTick(pos, this, 20);
 	}
 }

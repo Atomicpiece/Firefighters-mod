@@ -46,7 +46,7 @@ public class BurningTiresBlock extends Block implements EntityBlock {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 1);
+		world.scheduleTick(pos, this, 20);
 		BurningTiresBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
@@ -57,7 +57,7 @@ public class BurningTiresBlock extends Block implements EntityBlock {
 		int y = pos.getY();
 		int z = pos.getZ();
 		BurningTiresOnTickUpdateProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 1);
+		world.scheduleTick(pos, this, 20);
 	}
 
 	@Override

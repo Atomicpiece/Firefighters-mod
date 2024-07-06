@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Unifire",
+    "name": "Fire",
     "specialInformation": {
       "fixedValue": []
     },
@@ -58,7 +58,7 @@
     "material": {
       "value": "FIRE"
     },
-    "tickRate": 1,
+    "tickRate": 20,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,

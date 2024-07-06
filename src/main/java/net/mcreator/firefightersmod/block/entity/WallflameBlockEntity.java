@@ -91,7 +91,7 @@ public class WallflameBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Wall flame");
+		return Component.literal("Wall fire");
 	}
 
 	@Override

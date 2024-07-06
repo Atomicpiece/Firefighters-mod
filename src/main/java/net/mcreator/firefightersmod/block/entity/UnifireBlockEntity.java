@@ -91,7 +91,7 @@ public class UnifireBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Unifire");
+		return Component.literal("Fire");
 	}
 
 	@Override
